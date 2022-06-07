@@ -17,7 +17,7 @@ class CreateCommentairesTable extends Migration
             $table->id();
             $table->date("com_date");
             $table->text("com_auteur");
-            $table->text("bil_date");
+            $table->text("com_contenu");
             $table->unsignedBigInteger("billet_id");
             $table->foreign("billet_id")
                 ->references("id")

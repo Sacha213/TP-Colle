@@ -16,6 +16,8 @@ class BilletsController extends Controller
     public function index()
     {
         //
+        $billets = Billets::all();
+        return view('billets', compact('billets'));
     }
 
     /**
