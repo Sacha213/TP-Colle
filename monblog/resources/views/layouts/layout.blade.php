@@ -3,18 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="css/monblog.css">
     <title>
         @yield('titrePage')
     </title>
 </head>
 
-<body>
-    <header>
+<body id="global">
+    <header id="titreBlog">
         @yield('titreItem')
     </header>
+
+    <div id="contenu">
     @yield('contenu')
-    <footer class="footer">
+    </div>
+    
+
+    <footer class="footer" id="piedBlog">
         Monblog - copyright 3AInfo - 2022
     </footer>
     
